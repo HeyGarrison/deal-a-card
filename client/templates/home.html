@@ -1,0 +1,20 @@
+---
+name: home
+url: /
+controller: MainCtrl
+controllerAs: main
+---
+
+<div class="grid-container small-up-2">
+    <div class="grid-block small-4">
+      <button id="newCard" class="button" ng-click="dealOneCard()">Deal One Card</button>
+    </div>
+</div>
+<div class="grid-container small-up-1">
+  <div class="grid-block"> 
+    <ul class="cards">
+      <li class="hiddenCard">||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</li>
+      <li ng-repeat="card in revealedCards" ng-class="card.suit"><span class="topRight" ng-bind="card.cardNum"></span><p ng-bind="card.cardNum"></p><span class="bottomLeft" ng-bind="card.cardNum"></span></li>
+    </ul>
+  </div>
+</div>

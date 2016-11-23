@@ -1,0 +1,100 @@
+.cards {
+    margin-left: 0;
+    margin-top: 0;
+    
+    li {
+        float: left;
+        display: block;
+        margin-right: -50px;
+        height: 140px;
+        width: 85px;
+        padding: 10px;
+        border: 1px solid #777;
+        border-radius: 5px;
+        position: relative;
+        background: white;
+        margin-top: 20px;
+
+        p {
+            margin-top: 26px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .topRight {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 21px;
+        }
+
+        .bottomLeft {
+            position: absolute;
+            left: 10px;
+            bottom: 0px;
+            font-size: 21px;
+        }
+
+        &.hiddenCard {
+            margin-right: 60px;
+            word-wrap: break-word;
+            font-size: 15px;
+        }
+
+        &:after {
+            position: absolute;
+            top: -4px;
+            font-size: 30px;
+        }
+        &:before {
+            position: absolute;
+            bottom: -4px;
+            font-size: 30px;
+            right: 10px;
+        }
+
+        &.clubs {
+            
+            &:after {
+                content: '\2663';
+            }
+            &:before {
+                content: '\2663';
+            }
+        }
+
+        &.hearts {
+            &:after {
+                content: '\2665';
+            }
+            &:before {
+                content: '\2665';
+            }
+        }
+
+        &.spade {
+            &:after {
+                content: '\2660';
+            }
+            &:before {
+                content: '\2660';
+            }
+        }
+
+        &.diamonds {
+            &:after {
+                content: '\2666';
+            }
+            &:before {
+                content: '\2666';
+            }
+        }
+
+    }
+
+}
+
+#newCard {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
