@@ -16,11 +16,9 @@ if the app was smart it would only deal one card at a time
 
 3.) get the factory and thus json
 
-4.) in controller assign cards to a suit
+4.) Spit out cards from factory to controller
 
-5.) when button is clicked deal a card at random, but can't duplicate
-
-6.) when shuffle is selected start over, nothing more. Shuffle really happens when card is duplicated.
+5.) Repeat and reveal on click
 
 #### Design
 
